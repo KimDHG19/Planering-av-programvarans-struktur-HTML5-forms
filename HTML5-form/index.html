@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Html formulär</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="form1">
+	<h1>Ta kontakt!</h1>
+	<p> Obligatoriska fält är bemärkta med en asterix <em>*</em> </p>
+	<fieldset>
+		<legend>Kontaktuppgifter</legend>
+		
+		<div class="input-section">
+			<label class="contact-label">namn <em>*</em> </label>
+			<input type="text" name="contactname" class="contact-input" required data-value-missing="text">
+		</div>
+		
+		<div class="input-section">
+			<label class="contact-label"> e-post <em>*</em></label>
+			<input type="email" name="contactemail" class="contact-input" required>
+		</div>
+
+		<div class="input-section">
+			<label class="contact-label">Födelsedatum</label>
+			<input type="date" name="contactbirth" class="contact-input" min="2019-10-10">
+		</div>
+		
+	</fieldset>
+	<fieldset>
+		<legend>Tilläggsinfo</legend>
+
+		<div class="input-section">
+			<label class="contact-label">vitsord</label>
+			<input type="range" name="vitsord"
+			       min="0" max="5">
+		</div>
+		
+		<div class="input-section">
+			<label class="contact-label">kommentar</label>
+			<textarea name="comment"></textarea>
+		</div>
+		
+		<div class="check-box">
+			<input type="checkbox" name="nyhetsbrev" value="nyhetsbrev">
+			<p> skicka gärna nyhetsbrev!</p>
+		</div>
+	</fieldset>
+	
+	<input id="send-button" type="submit" name="send_button" value="Send">
+	
+	
+</form>
+</body>
+</html>
