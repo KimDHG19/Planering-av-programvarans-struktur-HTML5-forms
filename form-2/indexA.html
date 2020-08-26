@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Html formulär</title>
+	<link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+
+<form id="form1">
+	<h1>Ta kontakt!</h1>
+	<p> Obligatoriska fält är bemärkta med en asterix <em>*</em> </p>
+	<fieldset>
+		<legend>Login uppgifter</legend>
+		
+		<div class="center">
+			
+			<div class="input-section">
+				<label class="contact-label">användarnamn <em>*</em> </label>
+				<input type="text" name="contactname" class="contact-input" required minlength="2" maxlength="12">
+			</div>
+			
+			<div class="input-section">
+				<label class="contact-label"> password <em>*</em></label>
+				<input type="password" name="password" class="contact-input" required minlength="6">
+			</div>
+			
+			<div class="input-section">
+				<label class="contact-label">security PIN</label>
+				<input type="text" name="PIN" placeholder="XXXX" class="contact-input" required pattern="([0-9]{1}){4}">
+			</div>
+		</div>
+		
+		</fieldset>
+		
+		<fieldset>
+			<legend>Användaruppgifter</legend>
+			
+			<div class="center">
+				<div class="input-section">
+					<label class="contact-label">webbsida</label>
+					<input type="url" name="url">
+				</div>
+				
+				<div class="input-section">
+					<label class="contact-label">favorit färg</label>
+					<input type="color" name="color">
+				</div>
+				
+				<div class="input-section">
+					<label class="contact-label">prenumeration start</label>
+					<input type="week" name="week">
+				</div>
+				
+				<div class="input-section">
+					<label class="contact-label">slumpmässig lista</label>
+					<input type="text" name="week">
+				</div>
+			</div>
+	
+	</fieldset>
+	
+	<input id="send-button" type="submit" name="send_button" value="Send">
+
+
+</form>
+</body>
+</html>
